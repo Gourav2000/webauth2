@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/icon2.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/styles.css">
+
+    <title>Enigma Hub</title>
+</head>
+
+<body>
+    <div id="top-banner">
+        <div id="heading">
+            Enigma Hub
+        </div>
+        <img src="static/imgs/logo.png" id="logo1">
+    </div>
+    <div id="login-form">
+        <div class="container">
+            <form class="form" action="{{url_for('profile_signup')}}" id="signup_form" method="POST">
+                <div class="form-group"> <label>Name:</label>
+                    <div class="input"> <input type="text" class="form-control" id="email" placeholder="Enter name"
+                            required name="name"> </div>
+                </div>
+                <div class="form-group"> <label>Email:</label>
+                    <div class="input"> <input type="email" class="form-control" id="email" placeholder="Enter email"
+                            required name="email"> </div>
+                </div>
+                <div class="form-group"> <label>Password:</label>
+                    <div class="input"> <input type="password" class="form-control" id="pwd"
+                            placeholder="Enter password" required name="password"> </div>
+                </div>
+                <div class="form-group"> <label>Confirm Password:</label>
+                    <div class="input"> <input type="password" class="form-control" id="pwdc"
+                            placeholder="Enter password" required name="confirm_password"> </div>
+                </div>
+                <div id="f-p" class="form-group"><a href="{{url_for('login')}}">Already a User?? Login</a></div>
+                <div id="button" class="form-group">
+                    <button id="signup" type="button">Sign Up</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div id="credits">
+        <div id="rand">
+            <img id="biz" src="static/imgs/logo-com.png">
+        </div>
+        <div id="dev">
+            Developed By<br><br>Aish Singh<br>Ashutosh Kumar<br>Gourav Sarkar<br>Paraj Bhattacharjee
+        </div>
+    </div>
+    <script>
+        document.getElementById("signup").addEventListener("click", function () {
+            
+            if (document.getElementById('pwd').value.length > 5 && document.getElementById('pwd').value == document.getElementById('pwdc').value) {
+               document.createElement('form').submit.call(document.getElementById("signup_form"));
+            }
+            else{
+                alert('Password do not match or password too small')
+            }
+        });
+    </script>
+</body>
+
+</html>

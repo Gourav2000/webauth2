@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto slab;
+    user-select: none;
+}
+
+html {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#top-banner {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 3%;
+    margin-top: 3%;
+    border-radius: 10px;
+    font-size: 2.5vw;
+    color: white;
+    backdrop-filter: blur(300px);
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 45%;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle
+}
+
+#logo1 {
+    width: 10%;
+    height: 10%;
+}
+
+#heading {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.grey-border-box {
+    margin-top: 5%;
+    border: solid rgb(194, 194, 194) 2px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 10px;
+    padding: 1%;
+    margin-bottom: 10%;
+}
+
+#profile-box {
+    text-align: center;
+}
+
+#profile {
+    margin-top: 2%;
+    width: 30%;
+    border-radius: 100px;
+}
+
+.info-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+    font-size: 1.3vw;
+}
+
+.gray-line {
+    background-color: rgb(194, 194, 194);
+    padding: 0.2%;
+    margin-left: 7%;
+    margin-right: 7%;
+    border-radius: 100px;
+}
+
+.info-span {
+    padding: 2%;
+    color: #3399FF;
+}
+
+label {
+    padding: 2%;
+}
+
+button {
+    padding: 4%;
+    background-color: rgb(51, 153, 255);
+    color: white;
+    border: none;
+    font-size: 1.3vw;
+    border-radius: 5px;
+    outline: none;
+    margin: 4%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(0, 128, 255)
+}
+
+.sub-heading {
+    font-size: 1.8vw;
+}
+
+#sub-heading-text {
+    font-size: 2vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.sub-heading-button {
+    font-size: 1.5vw;
+    margin-bottom: 0;
+    padding: 1%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 4%;
+}
+
+.search-box {
+    width: 40%;
+    border-radius: 100px;
+    border: none;
+    background-color: rgb(219, 216, 216);
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    outline: none;
+}
+
+#sub-heading {
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 0;
+}
+
+.control-panel {
+    font-size: 1.5vw;
+    margin-bottom: 0;
+    padding: 1%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#bin {
+    width: 20%;
+}
+
+#panel {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0;
+}
+
+#credits {
+    background-color: rgb(194, 194, 194);
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#profile-border {
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 3%;
+    padding: 0;
+    padding-bottom: 1%;
+}
+
+#sub-heading-no-mar {
+    margin-top: 0%;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+
+.inner-cb {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+}
+
+.blue-bg {
+    background-color: #3399FF;
+    height: 10%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#biz {
+    width: 50%;
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#dev {
+    font-size: 1vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#rand {
+    margin-top: auto;
+    margin-bottom: auto;
+}

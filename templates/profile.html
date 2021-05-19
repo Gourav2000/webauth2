@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head></head>
+    <body>
+        <a href="{{url_for('logout')}}"><button>logout</button></a>
+        <br><br><br>
+        {%for i in user_main['user'] %}
+            {{i}}: {{user_main['user'][i]}}
+            <br>
+        {%endfor%}
+    </body>
+</html>
